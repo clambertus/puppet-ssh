@@ -1,6 +1,6 @@
-#/etc/puppet/modules/ssh/manifests/user_keys.pp
+#/etc/puppet/modules/ssh/manifests/userkeys.pp
 
-class ssh::user_keys (
+class ssh::userkeys (
 
   $keycontent  = '',
   $sshkeysdir  = '',
