@@ -11,6 +11,6 @@ class ssh::userkeys (
     owner    => $user,
     group    => root,
     mode     => '0640',
-    require  => File["$ssh::params::sshd_keysdir"],
+    require  => File["${sshdkeysdir}"],
   }
 }
