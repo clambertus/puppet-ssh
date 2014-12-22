@@ -81,6 +81,10 @@ class ssh::params {
     $sshd_default_options +=
       [ 'AuthorizedKeysCommandUser'   => '', ]
   }
+  if ($AuthorizedKeysCommandRunAs != '') {
+    $sshd_default_options +=
+      [ 'AuthorizedKeysCommandRunAs'   => '', ]
+  }
 
   $ssh_default_options = {
     'Host *'                 => {
